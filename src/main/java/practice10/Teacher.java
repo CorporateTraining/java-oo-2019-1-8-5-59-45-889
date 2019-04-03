@@ -1,10 +1,6 @@
 package practice10;
 
-import com.sun.deploy.util.StringUtils;
-import org.apache.commons.math3.stat.inference.TestUtils;
-
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
