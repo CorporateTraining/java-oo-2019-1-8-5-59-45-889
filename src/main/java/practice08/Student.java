@@ -19,9 +19,13 @@ public class Student extends Person {
     }
 
     public String introduce() {
-        if (Objects.nonNull(this.klass.getLeader()) && this.klass.getLeader().getId() == this.getId()) {
+        if (isLeaderClass()) {
             return super.introduce() + " I am a Student. I am Leader of Class " + this.klass.getNumber() + ".";
         }
         return super.introduce() + " I am a Student. I am at Class " + this.klass.getNumber() + ".";
+    }
+
+    private boolean isLeaderClass() {
+        return Objects.nonNull(this.klass.getLeader()) && this.klass.getLeader().getId() == this.getId();
     }
 }
